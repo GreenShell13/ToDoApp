@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={hadoopIcon} className="App-logo" alt="logo" />
-        <img src={radioactiveFan} className="App-logo" />
+        <img src={hadoopIcon} className="App-logo" alt="hadoop icon" />
+        <img src={radioactiveFan} className="App-logo" alt="radiocative fan" />
       </header>
     </div>
   );
