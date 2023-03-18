@@ -48,8 +48,8 @@
   clear: both
 }
 .box-item {
-  width: '100px';
-  height: '100px';
-  background-color: '#61dafb';
+  width: 100px;
+  height: 100px;
+  background-color: #61dafb;
   border: 3px solid lime;
 }
