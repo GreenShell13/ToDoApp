@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.box {
+  display: flex;
+  justify-content: space-evenly
+}
+.box-child {
+  flex-grow: 0.8;
+}
+.box-clear {
+  clear: both
+}
+.box-item {
+  width: '100px';
+  height: '100px';
+  background-color: '#61dafb';
+  border: 3px solid lime;
+}
