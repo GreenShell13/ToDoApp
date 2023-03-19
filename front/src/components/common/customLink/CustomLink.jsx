@@ -1,10 +1,12 @@
 import React, { memo } from 'react';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-const CustomLink = ({ href, children, ...other}) => {
-    const path = window.location.pathname;
-    console.log(href);
-    return <li className={path === href ? 'active' : ''}>
-        <a href={href} {...other}>{children}</a>
+const CustomLink = ({ to, children, ...other}) => {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+    
+    return <li className={isActive ? 'active' : ''}>
+        <Link to={to} {...other}>{children}</Link>
     </li>
 }
 

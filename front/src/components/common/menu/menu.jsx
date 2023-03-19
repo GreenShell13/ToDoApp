@@ -1,13 +1,14 @@
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 import CustomLink from '../customLink/CustomLink';
 
 const Menu = () => {
     return <>
         <nav className="nav">
-            <a href="/" className="site-title">Main</a>
+            <Link to="/" className="site-title">Main</Link>
             <ul>
-                <CustomLink href="/monitor-activity">Monitor activity</CustomLink>
-                <CustomLink href="/materials">Materials</CustomLink>
+                <CustomLink to="monitor-activity">Monitor activity</CustomLink>
+                <CustomLink to="materials">Materials</CustomLink>
             </ul>
         </nav>
     </>;
