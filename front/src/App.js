@@ -17,6 +17,8 @@ function App() {
     case "/monitor-activity":
       component = <Monitor />
       break;
+    default:
+      break;
   }
 
   return (
