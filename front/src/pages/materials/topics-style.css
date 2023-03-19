@@ -1,0 +1,13 @@
+.topics {
+    padding: 8vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-item {
+    background-color: #dcdcdc;
+    padding: 2vmax;
+    display: flex;
+    text-align: center;
+}
