@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
-import './topics-style.css';
+import { Link } from 'react-router-dom';
 
+import './topics-style.css';
 import topics from './topics';
 
 const Materials = () => {
@@ -9,7 +10,7 @@ const Materials = () => {
         <div className="topics">
             {topics.map((topic, key) => 
                 <div className="topic-item" key={key}>
-                    {topic.label}
+                    <Link to={topic.path}>{topic.label}</Link>
                 </div>
             )}
         </div>
