@@ -1,9 +1,30 @@
-version: "3"
+version: "3.8"
+
 services:
-  react-app:
-    build: .
+  front:
+    build: 
+      context: ./src/front
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./front:/app/front
-      
+      - ./src/front:/app/src/front
+
+  postgres:
+    image: postgres:15.3-alpine3.18
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - "5432:5432"
+
+  php:
+    image: php:7.4-fpm
+    volumes: 
+      - "./src/back:/app/src/back"
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
