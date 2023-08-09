@@ -1,5 +1,5 @@
-FROM node:14-alpine
-WORKDIR /app
+FROM node:latest
+WORKDIR /app/src/front
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install
