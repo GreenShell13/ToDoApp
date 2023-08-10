@@ -14,14 +14,13 @@ const Wrap = styled.div`
 `
 
 const ItemText = styled.div`
-    margin-top: 15vh;
+    margin-top: 24vh;
     margin-left: 32vw;
     width: 36vw;
     height: 15vh;
     text-align: center;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     justify-content: center;
     border-radius: 100px;
@@ -34,7 +33,7 @@ const Section = () => {
     return (
         <Wrap>
             <ItemText>
-                <h1 style={{ margin: 0, fontSize: '3rem' }}>Электронный Ежедневник</h1>
+                <h1 style={{ margin: 0, fontSize: '3rem' }}>Электронный Дневник</h1>
                 <p>Планируй свой день и развивайся в своё удовольствие!</p>
             </ItemText>   
         </Wrap>
