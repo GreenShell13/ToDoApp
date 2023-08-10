@@ -16,7 +16,7 @@ const Wrap = styled.div`
 `
 
 const ItemText = styled.div`
-    margin-top: 24vh;
+    margin-top: 12vh;
     margin-left: 32vw;
     width: 36vw;
     height: 15vh;
@@ -29,7 +29,7 @@ const ItemText = styled.div`
     font-size: 1rem;
     opacity: 1;
     color: #fff;
-    textTransform: uppercase
+    text-transform: uppercase
 `
 
 const Section = () => {
