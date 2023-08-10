@@ -1,7 +1,9 @@
 import React, { memo } from 'react'
 import styled from 'styled-components'
 
-import MountainLake from '../../../assets/images/mountain-lake.avif'
+//import MountainLake from '../../../assets/images/mountain-river.jpg'
+//import MountainLake from '../../../assets/images/mountain-lake-3.jpg'
+import MountainLake from '../../../assets/images/mountain-lake-4.jpg'
 
 const Wrap = styled.div`
     flex-grow: 1;
@@ -27,6 +29,7 @@ const ItemText = styled.div`
     font-size: 1rem;
     opacity: 1;
     color: #fff;
+    textTransform: uppercase
 `
 
 const Section = () => {
