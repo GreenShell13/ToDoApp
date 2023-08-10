@@ -14,19 +14,20 @@ const Wrap = styled.div`
 `
 
 const ItemText = styled.div`
-    margin-top: 5vh;
+    margin-top: 15vh;
     margin-left: 32vw;
     width: 36vw;
     height: 15vh;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #E0E0E0;
+    
     align-items: center;
     justify-content: center;
     border-radius: 100px;
     font-size: 1rem;
-    opacity: 0.8;
+    opacity: 1;
+    color: #fff;
 `
 
 const Section = () => {
