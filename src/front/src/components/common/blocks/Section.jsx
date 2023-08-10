@@ -5,8 +5,6 @@ import MountainLake from '../../../assets/images/mountain-lake.avif'
 
 const Wrap = styled.div`
     flex-grow: 1;
-    width: 100vw;
-    height: 100wh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
