@@ -1,44 +1,21 @@
 import React, { memo } from 'react'
-import styled from 'styled-components'
 
-//import MountainLake from '../../../assets/images/mountain-river.jpg'
-//import MountainLake from '../../../assets/images/mountain-lake-3.jpg'
-import MountainLake from '../../../assets/images/mountain-lake-4.jpg'
-
-const Wrap = styled.div`
-    flex-grow: 1;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(${MountainLake});
-`
-
-const ItemText = styled.div`
-    margin-top: 12vh;
-    margin-left: 32vw;
-    width: 36vw;
-    height: 15vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    font-size: 1rem;
-    opacity: 1;
-    color: #fff;
-    text-transform: uppercase
-`
+import { 
+    Wrap, 
+    ItemText, 
+    RightTopButton
+} from './styledComponents'
 
 const Section = () => {
     return (
         <Wrap>
+            <RightTopButton>
+                <p style={{ opacity: 1, color: '#fff' }}>Войти</p>
+            </RightTopButton>
             <ItemText>
                 <h1 style={{ margin: 0, fontSize: '3rem' }}>Электронный Дневник</h1>
                 <p>Планируй свой день и развивайся в своё удовольствие!</p>
-            </ItemText>   
+            </ItemText>
         </Wrap>
     )
 }
