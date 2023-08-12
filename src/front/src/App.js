@@ -7,7 +7,7 @@ import Monitor from './pages/Monitor/Monitor';
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="body">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/materials" element={<Materials />} />
