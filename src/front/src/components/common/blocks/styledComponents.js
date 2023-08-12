@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-//import MountainLake from '../../../assets/images/mountain-river.jpg'
-//import MountainLake from '../../../assets/images/mountain-lake-3.jpg'
-import MountainLake from '../../../assets/images/mountain-lake-4.jpg'
-
 export const Wrap = styled.div`
     flex-grow: 1;
     width: 100vw;
@@ -15,7 +11,7 @@ export const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(${MountainLake});
+    background-image: url(${({ bgImg }) => bgImg});
 `
 
 export const ItemText = styled.div`
@@ -72,4 +68,5 @@ export const RegButton = styled(AuthButton)`
 
 export const TopBar = styled.div`
     text-align: center;
+    position: fixed;
 `
