@@ -27,6 +27,7 @@ const Home = () => {
             />
             <Section 
                 title='Будь собой в любом месте'
+                styles={{ color: '#000' }}
                 bgImg={MountainLakeThird}
             />
             <Section 
