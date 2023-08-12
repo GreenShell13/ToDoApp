@@ -11,7 +11,7 @@ export const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(${({ bgImg }) => bgImg});
+    background-image: url(${({ bgimg }) => bgimg});
 `
 
 export const ItemText = styled.div`
@@ -58,6 +58,7 @@ export const AuthButton = styled.div`
     font-size: 1rem;
     cursor: pointer;
     margin: 8px;
+
 `
 
 export const RegButton = styled(AuthButton)`

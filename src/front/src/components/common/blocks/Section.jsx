@@ -14,11 +14,11 @@ const Section = ({
     title = '',
     subTitle = '',
     regButtons = false,
-    bgImg = '',
+    bgimg = '',
     styles = { color: '#fff' }
 }) => {
     return (
-        <Wrap bgImg={bgImg}>
+        <Wrap bgimg={bgimg}>
             <TopBar>
                 <h1>𝕲𝖗𝖊𝖊𝖓𝕱𝖑𝖆𝖒𝖊</h1>
             </TopBar>

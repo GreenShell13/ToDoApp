@@ -18,22 +18,22 @@ const Home = () => {
                 title='Электронный Дневник' 
                 subTitle='Планируй свой день и развивайся в своё удовольствие!' 
                 regButtons={true}
-                bgImg={MountainLakeFirst}
+                bgimg={MountainLakeFirst}
             />
             <Section 
                 title='Создавай и меняйся'
                 styles={{ color: '#000' }}
-                bgImg={MountainLakeSecond}
+                bgimg={MountainLakeSecond}
             />
             <Section 
                 title='Будь собой в любом месте'
                 styles={{ color: '#000' }}
-                bgImg={MountainLakeThird}
+                bgimg={MountainLakeThird}
             />
             <Section 
                 title='И не забывай планировать!'
                 styles={{ color: '#000' }}
-                bgImg={MountainLakeFourth}
+                bgimg={MountainLakeFourth}
             />
         </Container>
     )
