@@ -15,7 +15,7 @@ export const Wrap = styled.div`
 `
 
 export const ItemText = styled.div`
-    margin-top: 10%;
+    margin-top: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;

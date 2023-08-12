@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import Fade from 'react-reveal/Fade'
 
 import { 
     Wrap, 
@@ -21,18 +22,24 @@ const Section = ({
             <TopBar>
                 <h1>𝕲𝖗𝖊𝖊𝖓𝕱𝖑𝖆𝖒𝖊</h1>
             </TopBar>
+            <Fade bottom>
                 <ItemText>
                     <h1 style={{ margin: 0, fontSize: '3rem', color: styles.color }}>{title}</h1>
                     <p>{subTitle}</p>
                 </ItemText>
-                {regButtons && <ButtonGroup>
-                    <AuthButton>
-                        <p style={{ opacity: 1, color: '#fff' }}>Войти</p>
-                    </AuthButton>
-                    <RegButton>
-                        <p>Зарегистрироваться</p>
-                    </RegButton>
-                </ButtonGroup>}
+            </Fade>
+            {regButtons && 
+                <Fade bottom>
+                    <ButtonGroup>
+                        <AuthButton>
+                            <p style={{ opacity: 1, color: '#fff' }}>Войти</p>
+                        </AuthButton>
+                        <RegButton>
+                            <p>Зарегистрироваться</p>
+                        </RegButton>
+                    </ButtonGroup>
+                </Fade>
+            }
         </Wrap>
     )
 }
