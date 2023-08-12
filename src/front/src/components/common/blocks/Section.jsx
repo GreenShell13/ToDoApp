@@ -1,5 +1,7 @@
-import React, { memo } from 'react'
+import React, { memo, useCallback } from 'react'
 import Fade from 'react-reveal/Fade'
+
+import { TextField }from '@mui/material'
 
 import { 
     Wrap, 
@@ -7,7 +9,8 @@ import {
     AuthButton,
     TopBar,
     ButtonGroup,
-    RegButton
+    RegButton,
+    AuthForm
 } from './styledComponents'
 
 const Section = ({
@@ -17,6 +20,9 @@ const Section = ({
     bgimg = '',
     styles = { color: '#fff' }
 }) => {
+    
+    const handleClick = useCallback(() => {}, [])
+
     return (
         <Wrap bgimg={bgimg}>
             <TopBar>
@@ -29,16 +35,30 @@ const Section = ({
                 </ItemText>
             </Fade>
             {regButtons && 
-                <Fade bottom>
-                    <ButtonGroup>
-                        <AuthButton>
-                            <p style={{ opacity: 1, color: '#fff' }}>Войти</p>
-                        </AuthButton>
-                        <RegButton>
-                            <p>Зарегистрироваться</p>
-                        </RegButton>
-                    </ButtonGroup>
-                </Fade>
+                <>
+                    <Fade clear>
+                        <AuthForm>
+                            <TextField 
+                                style={{ margin: '20px 20px 0px 20px' }} 
+                                label='Логин' 
+                            />
+                            <TextField 
+                                style={{ margin: '10px 20px 20px 20px' }}
+                                label='Пароль'
+                            />
+                        </AuthForm>
+                    </Fade>
+                    <Fade bottom>
+                        <ButtonGroup>
+                            <AuthButton onClick={handleClick}>
+                                <p style={{ opacity: 1, color: '#fff' }}>Войти</p>
+                            </AuthButton>
+                            <RegButton>
+                                <p>Зарегистрироваться</p>
+                            </RegButton>
+                        </ButtonGroup>
+                    </Fade>
+                </>
             }
         </Wrap>
     )

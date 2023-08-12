@@ -77,3 +77,16 @@ export const TopBar = styled.div`
     text-align: center;
     position: fixed;
 `
+
+export const AuthForm = styled.div`
+    background-color: #F0F8FF;
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    width: 300px;
+    border-radius: 20px;
+    opacity: 0.9;
+    &:hover {
+        box-shadow: 3px 2px 22px 10px rgba(153, 204, 255, 0.3);
+    }
+`
