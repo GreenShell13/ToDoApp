@@ -50,7 +50,7 @@ export const AuthButton = styled.div`
     background-color: #08bfff;
     width: 200px;
     color: #fff;
-    opacity: 1;
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -58,7 +58,13 @@ export const AuthButton = styled.div`
     font-size: 1rem;
     cursor: pointer;
     margin: 8px;
-
+    &:hover {
+        opacity: 1
+    }
+    &:active {
+        transform: scale(0.96);
+        box-shadow: 3px 2px 22px 1px rgba(153, 204, 255, 0.7);
+    }
 `
 
 export const RegButton = styled(AuthButton)`
