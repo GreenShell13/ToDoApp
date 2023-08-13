@@ -1,5 +1,6 @@
 import React, { memo, useCallback } from 'react'
 import Fade from 'react-reveal/Fade'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { TextField }from '@mui/material'
 
@@ -12,6 +13,7 @@ import {
     RegButton,
     AuthForm
 } from './styledComponents'
+import { authFormSelector, updateAuthParam } from '../../../pages/home/reducer/slice'
 
 const Section = ({
     title = '',
@@ -20,7 +22,13 @@ const Section = ({
     bgimg = '',
     styles = { color: '#fff' }
 }) => {
-    
+    const dispatch = useDispatch()
+    const authData = useSelector(authFormSelector)
+
+    const handleChange = useCallback(e => 
+        dispatch(updateAuthParam({ [e.target.name]: e.target.value }))
+    , [dispatch])
+
     const handleClick = useCallback(() => {}, [])
 
     return (
@@ -39,10 +47,16 @@ const Section = ({
                     <Fade clear>
                         <AuthForm>
                             <TextField 
+                                name='login'
+                                value={authData.login}
+                                onChange={handleChange}
                                 style={{ margin: '20px 20px 0px 20px' }} 
                                 label='Логин' 
                             />
-                            <TextField 
+                            <TextField
+                                name='password'
+                                value={authData.password}
+                                onChange={handleChange}
                                 style={{ margin: '10px 20px 20px 20px' }}
                                 label='Пароль'
                             />
