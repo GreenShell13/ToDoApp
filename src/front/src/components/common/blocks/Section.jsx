@@ -46,20 +46,22 @@ const Section = ({
                 <>
                     <Fade clear>
                         <AuthForm>
-                            <TextField 
-                                name='login'
-                                value={authData.login}
-                                onChange={handleChange}
-                                style={{ margin: '20px 20px 0px 20px' }} 
-                                label='Логин' 
-                            />
-                            <TextField
-                                name='password'
-                                value={authData.password}
-                                onChange={handleChange}
-                                style={{ margin: '10px 20px 20px 20px' }}
-                                label='Пароль'
-                            />
+                            <Fade cascade top>
+                                <TextField 
+                                    name='login'
+                                    value={authData.login}
+                                    onChange={handleChange}
+                                    style={{ margin: '20px 20px 0px 20px' }} 
+                                    label='Логин' 
+                                />
+                                <TextField
+                                    name='password'
+                                    value={authData.password}
+                                    onChange={handleChange}
+                                    style={{ margin: '10px 20px 20px 20px' }}
+                                    label='Пароль'
+                                />
+                            </Fade>
                         </AuthForm>
                     </Fade>
                     <Fade bottom>

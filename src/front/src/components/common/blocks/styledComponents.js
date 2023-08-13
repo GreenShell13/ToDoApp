@@ -83,7 +83,7 @@ export const AuthForm = styled.div`
     display: flex;
     flex-direction: column;
     height: 165px;
-    width: 300px;
+    width: 270px;
     border-radius: 20px;
     opacity: 0.9;
     &:hover {
