@@ -20,7 +20,9 @@ services:
       - "5432:5432"
 
   php:
-    image: php:7.4-fpm
+    build:
+      context: ./src/back
+      dockerfile: Dockerfile 
     volumes: 
       - "./src/back:/usr/share/nginx/html"
 

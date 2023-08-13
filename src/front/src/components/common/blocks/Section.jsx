@@ -35,10 +35,11 @@ const Section = ({
     , [dispatch])
 
     const handleClick = useCallback(async () => {
-        const response = await axios.get(authUrl).catch(err => console.log(err))    
-        console.log(response)
-        if (response?.success) dispatch(updateAuthParam({ ...response.data }))
-    }, [dispatch])
+        await 
+            axios.get(authUrl, { params: {login, password} })
+                .then(response => dispatch(updateAuthParam({ ...response.data })))
+                .catch(err => console.log(err))
+    }, [dispatch, login, password])
 
     return (
         <Wrap bgimg={bgimg}>
