@@ -1,5 +1,7 @@
 export const sender = 'Home'
 
+export const authUrl = 'http://localhost:80/api/auth.php'
+
 export const initState = {
     login: '',
     password: '',

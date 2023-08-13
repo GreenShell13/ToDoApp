@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 import { initState } from './constants'
-import { useSelector } from 'react-redux'
 
 const authSlice = createSlice({
     name: 'auth',

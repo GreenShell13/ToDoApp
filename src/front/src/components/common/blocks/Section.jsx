@@ -1,6 +1,7 @@
 import React, { memo, useCallback } from 'react'
 import Fade from 'react-reveal/Fade'
 import { useDispatch, useSelector } from 'react-redux'
+import axios from 'axios'
 
 import { TextField }from '@mui/material'
 
@@ -13,7 +14,11 @@ import {
     RegButton,
     AuthForm
 } from './styledComponents'
-import { authFormSelector, updateAuthParam } from '../../../pages/home/reducer/slice'
+import { 
+    authFormSelector, 
+    updateAuthParam 
+} from '../../../pages/home/reducer/slice'
+import { authUrl } from '../../../pages/home/reducer/constants'
 
 const Section = ({
     title = '',
@@ -23,13 +28,17 @@ const Section = ({
     styles = { color: '#fff' }
 }) => {
     const dispatch = useDispatch()
-    const authData = useSelector(authFormSelector)
+    const {login, password, isAuth } = useSelector(authFormSelector)
 
     const handleChange = useCallback(e => 
         dispatch(updateAuthParam({ [e.target.name]: e.target.value }))
     , [dispatch])
 
-    const handleClick = useCallback(() => {}, [])
+    const handleClick = useCallback(async () => {
+        const response = await axios.get(authUrl).catch(err => console.log(err))    
+        console.log(response)
+        if (response?.success) dispatch(updateAuthParam({ ...response.data }))
+    }, [dispatch])
 
     return (
         <Wrap bgimg={bgimg}>
@@ -49,17 +58,18 @@ const Section = ({
                             <Fade cascade top>
                                 <TextField 
                                     name='login'
-                                    value={authData.login}
+                                    value={login}
                                     onChange={handleChange}
                                     style={{ margin: '20px 20px 0px 20px' }} 
                                     label='Логин' 
                                 />
                                 <TextField
                                     name='password'
-                                    value={authData.password}
+                                    value={password}
                                     onChange={handleChange}
                                     style={{ margin: '10px 20px 20px 20px' }}
                                     label='Пароль'
+                                    type='password'
                                 />
                             </Fade>
                         </AuthForm>
