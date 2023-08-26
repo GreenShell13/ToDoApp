@@ -78,6 +78,6 @@ div#shape-outside-polygon {
     margin: 30px;
     padding: 10px;
     border: 10px double #b5b5b5;
-    shape-outside: polygon(0 0, 100% 50%, 0 100%) content-box;
-    clip-path: polygon(20% 10%, 100% 50%, 20% 90%);
+    shape-outside: polygon(100% 100%, 0 50%, 100% 0%) content-box;
+    clip-path: polygon(100% 90%, 20% 50%, 100% 10%);
 }
