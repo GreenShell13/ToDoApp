@@ -1,0 +1,83 @@
+#rootDiv {
+    border: 2px dashed darkcyan;
+    background-color: #000;
+}
+
+h1 {
+    color: lime;
+    font-size: 0.5in;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-stretch: ultra-expanded;
+    text-decoration: underline;
+    text-shadow: #8afa8a -5px -0.2rem 18px;
+}
+
+p {
+    color: limegreen;
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 2rem;
+    text-align: justify;
+    line-height: 3vh;
+}
+
+span.bottom {
+    vertical-align: sub;
+}
+
+span.top {
+    vertical-align: super;
+}
+
+div#shape-outside-inset {
+    background-color: #8afa8a;
+    border-radius: 1% 90%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    shape-outside: inset(10% round 5% 90%) margin-box;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 20px #0d1ce2;
+    margin: 30px;
+    padding: 20px;
+    border: 10px solid purple;
+}
+
+div#shape-outside-circle {
+    background-color: antiquewhite;
+    width: 180px;
+    height: 220px;
+    float: right;
+    margin: 30px;
+    padding: 10px;
+    border: 10px groove #b5b5b5;
+    shape-outside: circle(55% at center) border-box;
+    border-radius: 120px;
+}
+
+div#shape-outside-ellipse {
+    background-color: rgb(3, 245, 232);
+    width: 180px;
+    height: 220px;
+    float: right;
+    margin: 30px;
+    padding: 10px;
+    border: 10px groove #b5b5b5;
+    shape-outside: ellipse(70% 57% at 40% 50%) padding-box;
+    border-radius: 100% 33%;
+}
+
+div#shape-outside-polygon {
+    background-color: rgb(237, 245, 3);
+    width: 150px;
+    height: 220px;
+    float: right;
+    margin: 30px;
+    padding: 10px;
+    border: 10px double #b5b5b5;
+    shape-outside: polygon(0 0, 100% 50%, 0 100%) content-box;
+    clip-path: polygon(20% 10%, 100% 50%, 20% 90%);
+}

@@ -7,6 +7,7 @@ import Home from './pages/home/Home'
 import Materials from './pages/materials/Materials'
 import Monitor from './pages/Monitor/Monitor'
 import { Menu } from './components/common/menu/index'
+import CssBlock from './pages/materials/topics/frontend/css/CssBlock'
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       <div className="body">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/materials" element={<Materials />} />
+          <Route path="/materials" element={<Materials />} exact={true} />
           <Route path="monitor-activity" element={<Monitor />} />
+          <Route path="/materials/front/css" element={<CssBlock />} />
         </Routes>
       </div>
     </>

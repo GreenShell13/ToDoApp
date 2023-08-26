@@ -2,27 +2,27 @@ const topics = [
     {
         id: 0,
         label: 'Front-end',
-        path: 'materials/front'
+        path: 'front/css'
     },
     {
         id: 1,
         label: 'Back-end',
-        path: 'materials/back'
+        path: 'back'
     },
     {
         id: 2,
         label: 'DevOps',
-        path: 'materials/devops'
+        path: 'devops'
     },
     {
         id: 3,
         label: 'AI',
-        path: 'materials/ai'
+        path: 'ai'
     },
     {
         id: 4,
         label: 'Computer Science',
-        path: 'materials/computer-science'
+        path: 'computer-science'
     }
 ];
 
