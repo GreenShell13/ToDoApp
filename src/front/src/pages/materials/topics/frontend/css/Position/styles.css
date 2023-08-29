@@ -1,0 +1,57 @@
+p {
+    border: 5px groove blue;
+}
+
+div#div-position {
+   overflow-y: scroll; 
+}
+
+.paragraph-absolute {
+    position: absolute;
+    left: 10%;
+}
+
+b {
+    position: absolute;
+    background-color: brown;
+    top: auto;
+    right: auto;
+    bottom: 1%;
+    left: auto;
+    min-width: 200px;
+    min-height: 100px;
+    border: 5px dotted orange;
+}
+
+div#div-fixed {
+    position: fixed;
+}
+
+div#div-sticky {
+    position: sticky;
+    top: 2em;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    background-color: #749fd0;
+}
+
+div#scroll-bar {
+    overflow: scroll;
+    height: 200px;
+    border: 5px inset red;
+}
+
+h2 {
+    position: sticky;
+    bottom: 1%;
+    background-color: #749fd0;
+}
+
+span#rel-span {
+    position: relative;
+    background-color: aquamarine;
+    top: 30px;
+    bottom: 70px;
+    right: 100px;
+}
