@@ -25,6 +25,7 @@ b {
 
 div#div-fixed {
     position: fixed;
+    background-color: aliceblue;
 }
 
 div#scroll-bar {
