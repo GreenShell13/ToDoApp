@@ -27,15 +27,6 @@ div#div-fixed {
     position: fixed;
 }
 
-div#div-sticky {
-    position: sticky;
-    top: 2em;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    background-color: #749fd0;
-}
-
 div#scroll-bar {
     overflow: scroll;
     height: 200px;
@@ -45,6 +36,7 @@ div#scroll-bar {
 h2 {
     position: sticky;
     bottom: 1%;
+    top: 2%;
     background-color: #749fd0;
 }
 
