@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import './styles.css'
 
-const CssBlock = () => {
+const ShapeOutsideBlock = () => {
     return <div id='rootDiv'>
         <h1>In Root Div</h1>
         <article>
@@ -53,4 +53,4 @@ const CssBlock = () => {
     </div>
 }
 
-export default memo(CssBlock)
+export default memo(ShapeOutsideBlock)
