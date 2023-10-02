@@ -1,6 +1,6 @@
 <?php
 //Очень крутой код 
-
+//Скоро научусь писать так же
 $response = [
     'success' => 'true',
     'error' => false,
