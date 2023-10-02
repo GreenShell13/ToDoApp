@@ -7,7 +7,7 @@ import Home from './pages/home/Home'
 import Materials from './pages/materials/Materials'
 import Monitor from './pages/Monitor/Monitor'
 import { Menu } from './components/common/menu/index'
-import PositionBlok from './pages/materials/topics/frontend/css/Position/PositionBlok'
+import PositionBlock from './pages/materials/topics/frontend/css/position/PositionBlock'
 //import CssBlock from './pages/materials/topics/frontend/css/CssBlock'
 
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/materials" element={<Materials />} exact={true} />
           <Route path="monitor-activity" element={<Monitor />} />
-          <Route path="/materials/front/css" element={<PositionBlok />} />
+          <Route path="/materials/front/css" element={<PositionBlock />} />
         </Routes>
       </div>
     </>

@@ -1,4 +1,4 @@
-p {
+#div-position > p {
     border: 5px groove blue;
 }
 
