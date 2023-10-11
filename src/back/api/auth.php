@@ -37,6 +37,7 @@ try {
     $response['error'] = true;
     $response['errorMsg'] = $e->getMessage();
     $response['data']['isAuth'] = false;
+	$response['success'] = false;
 }
 
 
