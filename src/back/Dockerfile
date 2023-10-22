@@ -1,7 +1,6 @@
 FROM php:8.2-fpm
 WORKDIR /usr/share/nginx/html
 COPY . .
-#COPY ./config/php.ini /usr/local/etc/php
 RUN mkdir /var/log/xdebug_log && \
     touch /var/log/xdebug_log/xdebug.log && \
     chmod 666 /var/log/xdebug_log/xdebug.log
