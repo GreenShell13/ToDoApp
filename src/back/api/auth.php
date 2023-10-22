@@ -30,8 +30,10 @@ try {
     $stmt = $db->prepare($query);
     $stmt->execute($params);
 
-    $response['data'] = $stmt->fetchAll(PDO::FETCH_ASSOC)[0];
-    if (!empty($response['data']))
+    $user_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $response['data'] = !empty($user_data) ? $user_data[0] : [];
+
+    if (count($response['data']) !== 0)
         $response['data']['isAuth'] = true;
 } catch(PDOException $e) {
     $response['error'] = true;
