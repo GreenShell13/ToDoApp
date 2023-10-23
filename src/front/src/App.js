@@ -10,6 +10,7 @@ import { Menu } from './components/common/menu/index'
 import PositionBlock from './pages/materials/topics/frontend/css/position/PositionBlock'
 import TimedTestBlock from './pages/materials/topics/frontend/js/function/testOfTimed'
 import FunctionConstructor from './pages/materials/topics/frontend/js/function/FunctionConstructor'
+import Memoization from './pages/materials/topics/frontend/js/function/Memoization'
 //import CssBlock from './pages/materials/topics/frontend/css/CssBlock'
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/materials/front/css" element={<PositionBlock />} />
           <Route path="/materials/front/js/functions/timed" element={<TimedTestBlock />} />
           <Route path="/materials/front/js/functions/function-constructor" element={<FunctionConstructor />} />
+          <Route path="/materials/front/js/functions/memoization" element={<Memoization />} />
         </Routes>
       </div>
     </>
