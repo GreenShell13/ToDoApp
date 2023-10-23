@@ -8,6 +8,7 @@ import Materials from './pages/materials/Materials'
 import Monitor from './pages/Monitor/Monitor'
 import { Menu } from './components/common/menu/index'
 import PositionBlock from './pages/materials/topics/frontend/css/position/PositionBlock'
+import TimedTestBlock from './pages/materials/topics/frontend/js/function/testOfTimed'
 //import CssBlock from './pages/materials/topics/frontend/css/CssBlock'
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/materials" element={<Materials />} exact={true} />
           <Route path="monitor-activity" element={<Monitor />} />
           <Route path="/materials/front/css" element={<PositionBlock />} />
+          <Route path="/materials/front/js/functions" element={<TimedTestBlock />} />
         </Routes>
       </div>
     </>
