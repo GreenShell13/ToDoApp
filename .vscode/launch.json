@@ -11,7 +11,7 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
-                "/usr/share/nginx/html": "/home/stranger/Desktop/todo_app/src/back"
+                "/usr/share/nginx/html": "${workspaceFolder}/src/back"
             },
             "xdebugSettings": {
                 "max_data": 65535,
