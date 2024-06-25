@@ -9,7 +9,7 @@
             "name": "Backend: php",
             "type": "php",
             "request": "launch",
-            "port": 9003,
+            "port":  9003,
             "pathMappings": {
                 "/usr/share/nginx/html": "${workspaceFolder}/src/back"
             },
