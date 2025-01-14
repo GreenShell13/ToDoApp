@@ -1,7 +1,11 @@
+import AuthReducer from './pages/home/reducer/slice'
+
 const initState = {}
 
-const rootReducer = (state = initState, action) => {
-    return state
+function rootReducer(state = initState, action) {
+    return {
+        auth: AuthReducer(state.auth, action)
+    }
 }
 
 export default rootReducer

@@ -8,7 +8,7 @@ import {
     TopBar,
 } from './styledComponents'
 import AuthForm from '../../auth/AuthForm'
-import { authFormSelector } from '../../../pages/home/reducer/slice'
+import { authSelector } from '../../../pages/home/reducer/slice'
 
 
 const Section = ({
@@ -18,7 +18,7 @@ const Section = ({
     bgimg = '',
     styles = { color: '#fff' }
 }) => {
-    const { isAuth } = useSelector(authFormSelector)
+    const { isAuth } = useSelector(authSelector)
 
     return (
         <Wrap bgimg={bgimg}>

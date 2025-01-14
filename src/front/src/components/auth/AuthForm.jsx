@@ -12,7 +12,7 @@ import {
     AuthButton
 } from './styledComponents'
 import { 
-    authFormSelector, 
+    authSelector, 
     updateAuthParam 
 } from '../../pages/home/reducer/slice'
 import { authUrl } from '../../pages/home/reducer/constants'
@@ -20,7 +20,7 @@ import { authUrl } from '../../pages/home/reducer/constants'
 
 const AuthForm = () => {
     const dispatch = useDispatch()
-    const { login, password, isAuth } = useSelector(authFormSelector)
+    const { login, password, isAuth } = useSelector(authSelector)
 
     const handleChange = useCallback(e => 
         dispatch(updateAuthParam({ [e.target.name]: e.target.value }))

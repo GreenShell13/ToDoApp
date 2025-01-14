@@ -11,11 +11,12 @@ import PositionBlock from './pages/materials/topics/frontend/css/position/Positi
 import TimedTestBlock from './pages/materials/topics/frontend/js/function/testOfTimed'
 import FunctionConstructor from './pages/materials/topics/frontend/js/function/FunctionConstructor'
 import Memoization from './pages/materials/topics/frontend/js/function/Memoization'
+import { authSelector } from './pages/home/reducer/slice'
 //import CssBlock from './pages/materials/topics/frontend/css/CssBlock'
 
 
 function App() {
-  const { isAuth } = useSelector(state => state.auth)
+  const { isAuth } = useSelector(authSelector)
   
   return (
     <>

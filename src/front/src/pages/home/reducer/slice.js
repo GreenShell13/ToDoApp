@@ -10,7 +10,7 @@ const authSlice = createSlice({
     }
 })
 
-export const authFormSelector = state => state?.auth
+export const authSelector = state => state?.auth
 
 export const {
     updateAuthParam
