@@ -1,12 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import rootReducer from './rootReducer'
-import { logDispatch, logToConsole } from './reduxAddons'
+import { delayAuthMsg, logDispatch, logToConsole } from './reduxAddons'
 
 const store = configureStore({
     reducer: rootReducer,
-    middleware: () => [
-        logToConsole
+    middleware: [
+        logToConsole,
+        delayAuthMsg
     ],
     enhancers: [
         logDispatch

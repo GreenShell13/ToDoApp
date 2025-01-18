@@ -1,14 +1,12 @@
 const logToConsole = storeApi => 
     next => 
         action => {
-            console.log('Dispatching action:')
-            console.log(action)
+            console.log('Dispatching action:', action)
 
             const result = next(action)
 
-            console.log('Store state after update:')
-            console.log(storeApi.getState())
-            
+            console.log('Store state after update:', storeApi.getState())
+
             return result
         }
 

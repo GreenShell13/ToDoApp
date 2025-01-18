@@ -1,19 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-import { initState } from './constants'
+import constants, { initState, domainName } from './constants'
 
 const authSlice = createSlice({
-    name: 'auth',
+    name: domainName,
     initialState: initState,
     reducers: {
-        updateAuthParam: (state, action) => ({ ...state, ...action.payload })
+        [constants.UPDATE_AUTH_PARAM.split('/')[1]]: (state, action) => ({ ...state, ...action.payload })
     }
 })
 
-export const authSelector = state => state?.auth
+export const authSelector = state => state?.[domainName]
 
 export const {
-    updateAuthParam
+    [constants.UPDATE_AUTH_PARAM.split('/')[1]]: updateAuthParam
 } = authSlice.actions
 
 export default authSlice.reducer
