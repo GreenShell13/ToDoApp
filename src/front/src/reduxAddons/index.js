@@ -1,0 +1,1 @@
+export { default as logDispatch } from './enhancers/logDispatch'
